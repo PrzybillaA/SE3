@@ -15,7 +15,7 @@
   },
   "include": [
     "src/**/*.ts"
-  ],
+, "src/spec/todo-board.spec.js", "src/spec/login.spec.js", "src/spec/hilfe.spec.js", "src/spec/einstellungen.spec.js"  ],
   "exclude": [
     "node_modules",
     "src/**/*.spec.ts",
