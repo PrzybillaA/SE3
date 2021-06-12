@@ -1,6 +1,6 @@
 import { Deserialize } from "./deserialize";
 
-export class User implements Deserialize {
+export class Todo implements Deserialize {
 
     id: number;
     titel: string;
