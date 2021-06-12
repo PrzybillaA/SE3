@@ -13,23 +13,6 @@ export class DatenbankProvider {
 
   constructor() {}
 
-  async setName () {
-    await Storage.set({
-      key: 'name',
-      value: 'Max',
-    });
-  };
-  
-  async checkName () {
-    return await Storage.get({ key: 'name' });
-  
-    
-  };
-  
-  async removeName () {
-    await Storage.remove({ key: 'name' });
-  };
-
   async setTodo(todo: Todo): Promise<any>{
 
     let keys = await Storage.keys;
