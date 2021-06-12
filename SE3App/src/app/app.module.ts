@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
+import { DatenbankProvider } from '../providers/datenbank/datenbank';
 import { LoginPage } from '../pages/login/login';
 
 @NgModule({
@@ -24,7 +25,8 @@ import { LoginPage } from '../pages/login/login';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    DatenbankProvider
   ]
 })
 export class AppModule {}
